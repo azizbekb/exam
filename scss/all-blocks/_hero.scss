@@ -39,7 +39,36 @@
         font-size: 15px;
         line-height: 25px;
         color: #FFFFFF;
-        letter-spacing: -1px;
+        letter-spacing: -2.2px;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    &__scooter-desc::before {
+        position: absolute;
+        content: "";
+        width: 203px;
+        height: 30px;
+        background-image: url("../images/hero-path.svg");
+        background-size: 203px 30px;
+        background-repeat: no-repeat;
+        background-position: center left;
+        top: 35px;
+        left: -281px;
+    }
+
+    &__scooter-desc::after {
+        position: absolute;
+        content: "";
+        width: 447px;
+        height: 138px;
+        background-image: url("../images/hero-cursor.svg");
+        background-size:447px 138px;
+        background-repeat: no-repeat;
+        background-position: center right;
+        right: -490px;
+        top: 40px;
     }
 }
 
@@ -52,7 +81,7 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) { 
 
     .hero__container {
-        background-image: url("../../images/hero-background@2x.jpg");
+        background-image: url("../images/hero-background@2x.jpg");
     }
 }
 
@@ -90,7 +119,28 @@ only screen and (                min-resolution: 2dppx) {
             font-size: 15px;
             line-height: 25px;
             letter-spacing: -2px;
+            position: relative;
+            top: 0;
+            left: 0;
         }
+        
+        &__scooter-desc::before {
+            position: absolute;
+            content: "";
+            width: 447px;
+            height: 138px;
+            background-image: url("../images/hero-cursor.svg");
+            background-size:447px 138px;
+            background-repeat: no-repeat;
+            background-position: center left;
+            top: 190px;
+            left: -281px;
+        }
+
+        &__scooter-desc::after {
+            display: none;
+        }
+    
     }
 }
 
@@ -104,7 +154,11 @@ only screen and (                min-resolution: 2dppx) {
         }
     
         &__scooter {
-            padding: 115px 32px 179px;
+            // padding: 115px 33px 179px 33px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         
         &__scooter-title {
@@ -129,6 +183,26 @@ only screen and (                min-resolution: 2dppx) {
             left: 32px;
             top: 323px;
             text-align: center;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        &__scooter-desc::before {
+            position: absolute;
+            content: "";
+            width: 447px;
+            height: 138px;
+            background-image: url("../images/hero-cursor.svg");
+            background-size:447px 138px;
+            background-repeat: no-repeat;
+            background-position: center left;
+            top: 215px;
+            left: -330px;
+        }
+
+        &__scooter-desc::after {
+            display: none;
         }
     }
     
