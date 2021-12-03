@@ -1,0 +1,130 @@
+.app {
+    margin-top: 160px;
+    &__container {
+        max-width: 1275px;
+        background-image: url("../images/app.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left bottom 230px; 
+        background-position-x: -400px;
+        
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style: none;
+    }
+
+    &__item {
+        margin-right: 30px;
+    }
+
+    &__title {
+        margin: 0;
+        margin-top: 40px;
+        margin-bottom: 27px;
+        width: 350px;
+        height: 28px;
+        left: 165px;
+        top: 1042px; 
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -1.07143px;
+        color: #495567;
+    }
+
+    &__desc {
+        margin: 0;
+        width: 350px;
+        height: 100px;
+        left: 165px;
+        top: 1097px;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+        letter-spacing: -2px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .app {
+        margin-top: 160px;
+        &__container {
+            max-width: 573px;
+        }
+    
+        &__list {
+            flex-direction: column;
+        }
+    
+        &__item {
+            display: flex;
+            margin-bottom: 40px;
+        }
+    
+        &__title {
+            white-space: nowrap;
+            margin: 0;
+            margin-bottom: 27px;
+            width: 398px;
+            left: 272px;
+            top: 868px;
+        }
+    
+        &__desc {
+            width: 398px;
+            height: 75px;
+            left: 272px;
+            top: 923px;
+            letter-spacing: -2px;
+        }
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .app {
+        margin-top: 120px;
+        &__container {
+            max-width: 311px;
+        }
+    
+        &__list {
+            flex-direction: column;
+        }
+    
+        &__item {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 48px;
+        }
+
+        &__img {
+            width: 56px;
+            height: 56px;
+        }
+    
+        &__title {
+            margin: 0;
+            margin-top: 40px;
+            margin-bottom: 27px;
+            width: 311px;
+            left: 32px;
+            top: 914px;
+            font-size: 20px;
+            text-align: center;
+            letter-spacing: -0.892857px;
+        }
+    
+        &__desc {
+            width: 311px;
+            left: 32px;
+            top: 966px;
+            text-align: center;
+            letter-spacing: -2px;
+        }
+    }
+}
