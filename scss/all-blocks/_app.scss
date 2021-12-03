@@ -1,7 +1,7 @@
 .app {
     margin-top: 160px;
     &__container {
-        max-width: 1275px;
+        max-width: 1440px;
         background-image: url("../images/app.png");
         background-repeat: no-repeat;
         background-size: contain;
@@ -12,12 +12,14 @@
 
     &__list {
         margin: 0;
+        margin-left: 135px;
         padding: 0;
         display: flex;
         list-style: none;
     }
 
     &__item {
+        width: 100%;
         margin-right: 30px;
     }
 
