@@ -1,0 +1,137 @@
+.hero {
+    &__container {
+        max-width: 1440px;
+        height: 650px;
+        background-image: url("../images/hero-background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__scooter {
+        padding: 153px 288px 152px 0px;
+    }
+    
+    &__scooter-title {
+        margin: 0;
+        margin-left: 165px;
+        margin-bottom: 40px;
+        width: 500px;
+        height: 112px;
+        left: 165px;
+        top: 249px;
+        font-weight: bold;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+        color: #FFFFFF;
+    }
+
+
+    &__scooter-desc {
+        margin: 0;
+        margin-left: 260px;
+        margin-bottom: 55px;
+        width: 405px;
+        height: 100px;
+        left: 260px;
+        top: 401px;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+        color: #FFFFFF;
+        letter-spacing: -1px;
+    }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+
+    .hero__container {
+        background-image: url("../../images/hero-background@2x.jpg");
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .hero {
+        &__container {
+            max-width: 768px;
+            background-image: url("../images/hero-background-tablet.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    
+        &__scooter {
+            padding: 137px 98px 217px 97px;
+        }
+        
+        &__scooter-title {
+            margin: 0;
+            margin-bottom: 32px;
+            width: 573px;
+            left: 97px;
+            top: 233px;
+            text-align: center;
+        }
+    
+    
+        &__scooter-desc {   
+            margin: 0;
+            margin-bottom: 40px;
+            width: 573px;
+            height: 75px;
+            left: 97px;
+            top: 369px; 
+            text-align: center;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: -2px;
+        }
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .hero {
+        &__container {
+            max-width: 375px;
+            background-image: url("../images/hero-background-mobile.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    
+        &__scooter {
+            padding: 115px 32px 179px;
+        }
+        
+        &__scooter-title {
+            margin: 0;
+            margin-bottom: 24px;
+            width: 311px;
+            height: 120px;
+            left: 32px;
+            top: 179px;
+            font-size: 40px;
+            line-height: 40px;
+            text-align: center;
+            letter-spacing: -1.78571px;
+        }
+    
+    
+        &__scooter-desc {
+            margin: 0;
+            margin-bottom: 34px;
+            width: 311px;
+            height: 125px;
+            left: 32px;
+            top: 323px;
+            text-align: center;
+        }
+    }
+    
+}
+
+
