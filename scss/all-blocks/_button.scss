@@ -1,0 +1,32 @@
+.button {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    text-decoration: none;
+    width: 180px;
+    height: 53px;
+    left: 21.67%;
+    right: 21.67%;
+    top: calc(50% - 25px/2);
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #FCB72B;
+    padding: 14px 39px;
+    text-align: center;
+    border: 3px solid transparent;
+
+    &:hover {
+        background-color: #FFFFFF;
+        border: 3px solid #FCB72B;
+        color: #FCB72B;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .button {
+        display: none;
+    }
+}

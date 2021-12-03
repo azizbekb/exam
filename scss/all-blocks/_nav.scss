@@ -1,0 +1,36 @@
+.nav {
+    margin-left: 58px;
+    margin-right: auto;
+    &__list {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__item {
+        margin-right: 32px;
+    }
+
+    &__link {
+        text-decoration: none;
+        height: 25px;
+        left: 0%;
+        right: 81.53%;
+        top: calc(50% - 25px/2);
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+    }
+
+    &__link:hover {
+        color: #FCB72B;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .nav {
+        display: none;
+    }
+}
